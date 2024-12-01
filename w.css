@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial;
+	margin: 0;
+}
+.header {
+	padding: 60px;
+	text-align: center;
+	background: #7d97ad;
+	color: white;
+}
+.navbar {
+	display: flex;
+	background-color: yellow;
+}
+.navbar a {
+	color: black;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+.havbar a:hover {
+	background-color:red;
+	color: black;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.side {
+	flex: 30%;
+	background-color:#f1f1f1;
+	padding: 20px;
+}
+.main {
+	flex: 70%;
+	border-color: white;
+	padding: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide*/
+@media screen and (max-width: 700px) {
+	  .row, .navbar {   
+	    flex-direction: column;
+	  }
+	}
